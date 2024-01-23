@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>po___em concre__te</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Source Code Pro', monospace;
+        }
+        a{
+            color: blue;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            background-color: white;
+            transition: background-color 3s;
+        }
+        .container div:hover{
+            background-color: blue;
+        }
+        .container div{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .container div a{
+            font-variation-settings: 'wght'  100;
+            transition: font-variation-settings 3s;
+        }
+        .container div a:hover{
+            font-variation-settings: 'wght'  900;
+        }
+        a span{
+            background: blue;
+            color: white;
+        }
+        #autor{
+            padding: 0 2em 0 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        #autor span::before{
+            content: "🌞";
+        }
+        #autor:hover span::before{
+            content: "👀";
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <p><a href="https://eladely.github.io/GP_P11/">Adel Guerchi Verdú <span>Yükel Pasarkaya</span></a></p>
+        <p><a href="https://sarajacome.github.io/gp_11/">Sara Jácome Tortosa <span>Eugen Gomringer</span></a></p>
+        <p><a href="https://matildezzz.github.io/gp_p12/">Matilde Calleja García <span>Eugen Gomringer</span></a></p>
+        <p><a href="">Andrea Quiñonero <span>Jiři Valocb</span></a></p>
+        <p><a href="">Aida Navarrete Cañete <span>Augusto de Campos</span></a></p>
+        <p><a href="">Andrea Alfonso Sanchis <span>Max Bense, Valleyless Mountains</span></a></p>
+        <p><a href="https://ikeronil.github.io/p11/">Iker Juan Sánchez <span>Renaldo Azeredo</span></a></p>
+        <p><a href="https://canodj04.github.io/GP23_P11/">Jordi Cano Díaz <span>Emenett Williams</span></a></p>
+        <p><a href="">Malena Villaroy Piquero <span>Décio Pignatari</span></a></p>
+        <p><a href="">Sandra Pla Martínez <span>José Lino Grünewold</span></a></p>
+        <p><a href="">Elízabeth López Espí <span>Enrique Uribe</span></a></p>
+        </div>
+    </div>
+    <div id="autor"  onclick="myFunction()">
+        <p><i id="icon" class="fa fa-heart"></i><span>classe 2gp 23/24</span></p>
+    </div>
+    <script>
+        function myFunction() {
+        //   const element = document.getElementById("icon");  // Get the DIV element
+        //   element.classList.remove("fa-heart"); // Remove mystyle class from DIV
+        //   element.classList.add("fa-heart-o"); // Add newone class to DIV
+          let para = document.getElementById("icon");
+          if (para.classList.contains("fa-heart")) {
+                para.classList.remove("fa-heart");
+            }
+            else {
+                para.classList.add("fa-heart-o");
+            }
+        }
+    </script>
+</body>
+</html>
